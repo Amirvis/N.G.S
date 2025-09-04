@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--========== BOX ICONS ==========-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!--========== CSS ==========-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <title>N.G.S Menu</title>
+  </head>
+  <body dir="rtl">
+    <!--========== SCROLL TOP ==========-->
+    <a href="#" class="scrolltop" id="scroll-top">
+      <i class="bx bx-chevron-up scrolltop__icon"></i>
+    </a>
+
+    <!--========== HEADER ==========-->
+    <header class="l-header" id="header">
+      <nav class="nav bd-container">
+        <a href="#" class="nav__logo">N.G.S Menu</a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">خانه</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">درباره ما</a>
+            </li>
+            <li class="nav__item">
+              <a href="#services" class="nav__link">خدمات</a>
+            </li>
+            <li class="nav__item"><a href="#menu" class="nav__link">منو</a></li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">ارتباط با ما</a>
+            </li>
+
+            <li><i class="bx bx-moon change-theme" id="theme-button"></i></li>
+          </ul>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-menu"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main class="l-main">
+      <!--========== HOME ==========-->
+      <section class="home" id="home">
+        <div class="home__container bd-container bd-grid">
+          <div class="home__data">
+            <h1 class="home__title">مجتمع N.G.S</h1>
+            <h2 class="home__subtitle">
+              قهوه حقیقت است!
+            </h2>
+            <a href="#menu" class="button">منو رو ببین!</a>
+          </div>
+
+          <img
+            src="./assets/img/NGS Menu.png"
+            alt=""
+            class="home__img"
+          />
+        </div>
+      </section>
+
+      <!--========== ABOUT ==========-->
+      <section class="about section bd-container" id="about">
+        <div class="about__container bd-grid">
+          <div class="about__data">
+            <span class="section-subtitle about__initial">درباره ما</span>
+            <h2 class="section-title about__initial">
+              سعی ما بر بهترین‌هاست
+            </h2>
+            <p class="about__description">
+              <ul style="list-style: none;">
+                <li>برگذاری انواع سناریوهای مافیا</li>
+                <li>دورهمی D&D</li>
+                <li>بازی‌های رومیزی و فکری</li>
+                <li>همراه با سرگرمی‌های پرانرژی</li>
+              </ul>
+            </p>
+          </div>
+
+          <img src="assets/img/mafiagame.jpg" alt="" class="about__img" />
+        </div>
+      </section>
+
+      <!--========== SERVICES ==========-->
+      <section class="services section bd-container" id="services">
+        <span class="section-subtitle">خدمات</span>
+        <h2 class="section-title">سرویس مشتری‌های دائمی</h2>
+
+        <div class="services__container bd-grid">
+          <div class="services__content">
+            <i class="icons fa-solid fa-scroll"></i>
+            <h3 class="services__title">رسپی درخواستی</h3>
+            <p class="services__description">می‌تونی یه سری چیزای ترکیبی از منو سفارش بدی</p>
+          </div>
+
+          <div class="services__content">
+            <i class="icons fa-solid fa-percent"></i>
+            <h3 class="services__title">تخفیف</h3>
+            <p class="services__description">به نسبت حجم سفارش یه تخفیف رندوم مهمون ما</p>
+          </div>
+
+          <div class="services__content">
+            <i class="icons fa-solid fa-book"></i>
+            <h3 class="services__title">کتابتو عوض کن</h3>
+            <p class="services__description">می‌تونی یه کتاب از کتابخونه‌مون برداری و با کتاب خودت جایگزینش کنی</p>
+          </div>
+        </div>
+      </section>
+
+      <!--========== MENU ==========-->
+      <section class="section bd-container" id="menu">
+        <span class="section-subtitle">مخصوص</span>
+        <h2 class="section-title">منوی هفته</h2>
+
+        <!-- Menu Categories -->
+        <div class="menu__categories">
+          <button class="menu__category-btn active" data-category="coffee">
+            قهوه
+          </button>
+          <button class="menu__category-btn" data-category="HotDrink">
+            نوشیدنی گرم
+          </button>
+          <button class="menu__category-btn" data-category="MilkShake">
+            میلک شیک
+          </button>
+          <button class="menu__category-btn" data-category="food">غذا</button>
+          <button class="menu__category-btn" data-category="cocktail">
+            موکتل
+          </button>
+          <button class="menu__category-btn" data-category="dessert">
+            کیک و دسر
+          </button>
+          <button class="menu__category-btn" data-category="tea">
+            چای و دمنوش
+          </button>
+          <button class="menu__category-btn" data-category="juice">
+            آبمیوه
+          </button>
+        </div>
+
+        <!-- Coffee Menu -->
+        <div class="menu__category active" id="coffee">
+          <div class="menu__content">
+            <h3 class="menu__name">اسپرسو</h3>
+            <span class="menu__detail">قهوه خالص و قوی</span>
+            <span class="menu__preci">25,000 تومان</span>
+            <a href="#" class="button menu__button">
+              <i class="bx bx-cart-alt"></i>
+            </a>
+          </div>
+
+          <div class="menu__content">
+            <h3 class="menu__name">کاپوچینو</h3>
+            <span class="menu__detail">اسپرسو با شیر بخارپز</span>
+            <span class="menu__preci">35,000 تومان</span>
+            <a href="#" class="button menu__button">
+              <i class="bx bx-cart-alt"></i>
+            </a>
+          </div>
+
+          <div class="menu__content">
+            <h3 class="menu__name">لاته</h3>
+            <span class="menu__detail">اسپرسو با شیر داغ</span>
+            <span class="menu__preci">40,000 تومان</span>
+            <a href="#" class="button menu__button">
+              <i class="bx bx-cart-alt"></i>
+            </a>
+          </div>
+
+          <div class="menu__content">
+            <h3 class="menu__name">موکا</h3>
+            <span class="menu__detail">اسپرسو با شکلات و شیر</span>
+            <span class="menu__preci">45,000 تومان</span>
+            <a href="#" class="button menu__button">
+              <i class="bx bx-cart-alt"></i>
+            </a>
+          </div>
+
+          <div class="menu__content">
+            <h3 class="menu__name">آمریکانو</h3>
+            <span class="menu__detail">اسپرسو با آب داغ</span>
+            <span class="menu__preci">30,000 تومان</span>
+            <a href="#" class="button menu__button">
+              <i class="bx bx-cart-alt"></i>
+            </a>
+          </div>
+
+          <div class="menu__content">
+            <h3 class="menu__name">فرپوچینو</h3>
+            <span class="menu__detail">قهوه سرد با یخ</span>
+            <span class="menu__preci">50,000 تومان</span>
+            <a href="#" class="button menu__button">
+              <i class="bx bx-cart-alt"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hot Drink Menu -->
+        <div class="menu__category" id="HotDrink">
+          <div class="menu__content">
+            <h3 class="menu__name">برگر کلاسیک</h3>
+            <span class="menu__detail">گوشت گاو با سبزیجات تازه</span>
+            <span class="menu__preci">120,000 تومان</span>
+            <a href="#" class="button menu__button">
+              <i class="bx bx-cart-alt"></i>
+            </a>
+          </div>
+
+          <div class="menu__content">
+            <h3 class="menu__name">پیتزا مارگاریتا</h3>
+            <span class="menu__detail">پنیر موزارلا و ریحان</span>
+            <span class="menu__preci">150,000 تومان</span>
+            <a href="#" class="button menu__button">
+              <i class="bx bx-cart-alt"></i>
+            </a>
+          </div>
+
+          <div class="menu__content">
+            <h3 class="menu__name">پاستا آلفردو</h3>
+            <span class="menu__detail">پاستا با سس خامه‌ای</span>
+            <span class="menu__preci">100,000 تومان</span>
+            <a href="#" class="button menu__button">
+              <i class="bx bx-cart-alt"></i>
+            </a>
+          </div>
+
+          <div class="menu__content">
+            <h3 class="menu__name">سالاد سزار</h3>
+            <span class="menu__detail">کاهو، پنیر پارمزان و سس سزار</span>
+            <span class="menu__preci">80,000 تومان</span>
+            <a href="#" class="button menu__button">
+              <i class="bx bx-cart-alt"></i>
+            </a>
+          </div>
+
+          <div class="menu__content">
+            <h3 class="menu__name">ساندویچ کلاب</h3>
+            <span class="menu__detail">مرغ، بیکن و سبزیجات</span>
+            <span class="menu__preci">90,000 تومان</span>
+            <a href="#" class="button menu__button">
+              <i class="bx bx-cart-alt"></i>
+            </a>
+          </div>
+
+          <div class="menu__content">
+            <h3 class="menu__name">استیک</h3>
+            <span class="menu__detail">گوشت گاو با سیب‌زمینی</span>
+            <span class="menu__preci">200,000 تومان</span>
+            <a href="#" class="button menu__button">
+              <i class="bx bx-cart-alt"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- MilkShake Menu -->
+        <div class="menu__category" id="MilkShake">
+          <div class="menu__content">
+            <h3 class="menu__name">موهیتو</h3>
+            <span class="menu__detail">نعنا، لیمو و سودا</span>
+            <span class="menu__preci">60,000 تومان</span>
+            <a href="#" class="button menu__button">
+              <i class="bx bx-cart-alt"></i>
+            </a>
+          </div>
+
+          <div class="menu__content">
+            <h3 class="menu__name">پینا کولادا</h3>
+            <span class="menu__detail">آناناس، نارگیل و رام</span>
+            <span class="menu__preci">70,000 تومان</span>
+            <a href="#" class="button menu__button">
+              <i class="bx bx-cart-alt"></i>
+            </a>
+          </div>
+
+          <div class="menu__content">
+            <h3 class="menu__name">مارگاریتا</h3>
+            <span class="menu__detail">تکویلا، لیمو و نمک</span>
+            <span class="menu__preci">80,000 تومان</span>
+            <a href="#" class="button menu__button">
+              <i class="bx bx-cart-alt"></i>
+            </a>
+          </div>
+
+          <div class="menu__content">
+            <h3 class="menu__name">کاسموپولیتن</h3>
+            <span class="menu__detail">ودکا، کرنبری و لیمو</span>
+            <span class="menu__preci">75,000 تومان</span>
+            <a href="#" class="button menu__button">
+              <i class="bx bx-cart-alt"></i>
+            </a>
+          </div>
+
+          <div class="menu__content">
+            <h3 class="menu__name">بلادی مری</h3>
+            <span class="menu__detail">ودکا و آب گوجه‌فرنگی</span>
+            <span class="menu__preci">65,000 تومان</span>
+            <a href="#" class="button menu__button">
+              <i class="bx bx-cart-alt"></i>
+            </a>
+          </div>
+
+          <div class="menu__content">
+            <h3 class="menu__name">دایکیری</h3>
+            <span class="menu__detail">رام، لیمو و شکر</span>
+            <span class="menu__preci">70,000 تومان</span>
+            <a href="#" class="button menu__button">
+              <i class="bx bx-cart-alt"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Food Menu -->
+        <div class="menu__category" id="food">
+          <div class="menu__content">
+            <h3 class="menu__name">چیزکیک</h3>
+            <span class="menu__detail">چیزکیک کلاسیک با توت‌فرنگی</span>
+            <span class="menu__preci">55,000 تومان</span>
+            <a href="#" class="button menu__button">
+              <i class="bx bx-cart-alt"></i>
+            </a>
+          </div>
+
+          <div class="menu__content">
+            <h3 class="menu__name">تیرامیسو</h3>
+            <span class="menu__detail">دسر ایتالیایی با قهوه</span>
+            <span class="menu__preci">60,000 تومان</span>
+            <a href="#" class="button menu__button">
+              <i class="bx bx-cart-alt"></i>
+            </a>
+          </div>
+
+          <div class="menu__content">
+            <h3 class="menu__name">براونی</h3>
+            <span class="menu__detail">شکلاتی با بستنی وانیلی</span>
+            <span class="menu__preci">50,000 تومان</span>
+            <a href="#" class="button menu__button">
+              <i class="bx bx-cart-alt"></i>
+            </a>
+          </div>
+
+          <div class="menu__content">
+            <h3 class="menu__name">پان‌کیک</h3>
+            <span class="menu__detail">پان‌کیک با عسل و میوه</span>
+            <span class="menu__preci">45,000 تومان</span>
+            <a href="#" class="button menu__button">
+              <i class="bx bx-cart-alt"></i>
+            </a>
+          </div>
+
+          <div class="menu__content">
+            <h3 class="menu__name">آیس‌کرم</h3>
+            <span class="menu__detail">سه طعم: وانیل، شکلات، توت‌فرنگی</span>
+            <span class="menu__preci">35,000 تومان</span>
+            <a href="#" class="button menu__button">
+              <i class="bx bx-cart-alt"></i>
+            </a>
+          </div>
+
+          <div class="menu__content">
+            <h3 class="menu__name">پروفیترول</h3>
+            <span class="menu__detail">شیرینی فرانسوی با کرم</span>
+            <span class="menu__preci">65,000 تومان</span>
+            <a href="#" class="button menu__button">
+              <i class="bx bx-cart-alt"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Cocktail Menu -->
+        <div class="menu__category" id="cocktail">
+          <div class="menu__content">
+            <h3 class="menu__name">چیزکیک</h3>
+            <span class="menu__detail">چیزکیک کلاسیک با توت‌فرنگی</span>
+            <span class="menu__preci">55,000 تومان</span>
+            <a href="#" class="button menu__button">
+              <i class="bx bx-cart-alt"></i>
+            </a>
+          </div>
+
+          <div class="menu__content">
+            <h3 class="menu__name">تیرامیسو</h3>
+            <span class="menu__detail">دسر ایتالیایی با قهوه</span>
+            <span class="menu__preci">60,000 تومان</span>
+            <a href="#" class="button menu__button">
+              <i class="bx bx-cart-alt"></i>
+            </a>
+          </div>
+
+          <div class="menu__content">
+            <h3 class="menu__name">براونی</h3>
+            <span class="menu__detail">شکلاتی با بستنی وانیلی</span>
+            <span class="menu__preci">50,000 تومان</span>
+            <a href="#" class="button menu__button">
+              <i class="bx bx-cart-alt"></i>
+            </a>
+          </div>
+
+          <div class="menu__content">
+            <h3 class="menu__name">پان‌کیک</h3>
+            <span class="menu__detail">پان‌کیک با عسل و میوه</span>
+            <span class="menu__preci">45,000 تومان</span>
+            <a href="#" class="button menu__button">
+              <i class="bx bx-cart-alt"></i>
+            </a>
+          </div>
+
+          <div class="menu__content">
+            <h3 class="menu__name">آیس‌کرم</h3>
+            <span class="menu__detail">سه طعم: وانیل، شکلات، توت‌فرنگی</span>
+            <span class="menu__preci">35,000 تومان</span>
+            <a href="#" class="button menu__button">
+              <i class="bx bx-cart-alt"></i>
+            </a>
+          </div>
+
+          <div class="menu__content">
+            <h3 class="menu__name">پروفیترول</h3>
+            <span class="menu__detail">شیرینی فرانسوی با کرم</span>
+            <span class="menu__preci">65,000 تومان</span>
+            <a href="#" class="button menu__button">
+              <i class="bx bx-cart-alt"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Dessert Menu -->
+        <div class="menu__category" id="dessert">
+          <div class="menu__content">
+            <h3 class="menu__name">چیزکیک</h3>
+            <span class="menu__detail">چیزکیک کلاسیک با توت‌فرنگی</span>
+            <span class="menu__preci">55,000 تومان</span>
+            <a href="#" class="button menu__button">
+              <i class="bx bx-cart-alt"></i>
+            </a>
+          </div>
+
+          <div class="menu__content">
+            <h3 class="menu__name">تیرامیسو</h3>
+            <span class="menu__detail">دسر ایتالیایی با قهوه</span>
+            <span class="menu__preci">60,000 تومان</span>
+            <a href="#" class="button menu__button">
+              <i class="bx bx-cart-alt"></i>
+            </a>
+          </div>
+
+          <div class="menu__content">
+            <h3 class="menu__name">براونی</h3>
+            <span class="menu__detail">شکلاتی با بستنی وانیلی</span>
+            <span class="menu__preci">50,000 تومان</span>
+            <a href="#" class="button menu__button">
+              <i class="bx bx-cart-alt"></i>
+            </a>
+          </div>
+
+          <div class="menu__content">
+            <h3 class="menu__name">پان‌کیک</h3>
+            <span class="menu__detail">پان‌کیک با عسل و میوه</span>
+            <span class="menu__preci">45,000 تومان</span>
+            <a href="#" class="button menu__button">
+              <i class="bx bx-cart-alt"></i>
+            </a>
+          </div>
+
+          <div class="menu__content">
+            <h3 class="menu__name">آیس‌کرم</h3>
+            <span class="menu__detail">سه طعم: وانیل، شکلات، توت‌فرنگی</span>
+            <span class="menu__preci">35,000 تومان</span>
+            <a href="#" class="button menu__button">
+              <i class="bx bx-cart-alt"></i>
+            </a>
+          </div>
+
+          <div class="menu__content">
+            <h3 class="menu__name">پروفیترول</h3>
+            <span class="menu__detail">شیرینی فرانسوی با کرم</span>
+            <span class="menu__preci">65,000 تومان</span>
+            <a href="#" class="button menu__button">
+              <i class="bx bx-cart-alt"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Tea Menu -->
+        <div class="menu__category" id="tea">
+          <div class="menu__content">
+            <h3 class="menu__name">چیزکیک</h3>
+            <span class="menu__detail">چیزکیک کلاسیک با توت‌فرنگی</span>
+            <span class="menu__preci">55,000 تومان</span>
+            <a href="#" class="button menu__button">
+              <i class="bx bx-cart-alt"></i>
+            </a>
+          </div>
+
+          <div class="menu__content">
+            <h3 class="menu__name">تیرامیسو</h3>
+            <span class="menu__detail">دسر ایتالیایی با قهوه</span>
+            <span class="menu__preci">60,000 تومان</span>
+            <a href="#" class="button menu__button">
+              <i class="bx bx-cart-alt"></i>
+            </a>
+          </div>
+
+          <div class="menu__content">
+            <h3 class="menu__name">براونی</h3>
+            <span class="menu__detail">شکلاتی با بستنی وانیلی</span>
+            <span class="menu__preci">50,000 تومان</span>
+            <a href="#" class="button menu__button">
+              <i class="bx bx-cart-alt"></i>
+            </a>
+          </div>
+
+          <div class="menu__content">
+            <h3 class="menu__name">پان‌کیک</h3>
+            <span class="menu__detail">پان‌کیک با عسل و میوه</span>
+            <span class="menu__preci">45,000 تومان</span>
+            <a href="#" class="button menu__button">
+              <i class="bx bx-cart-alt"></i>
+            </a>
+          </div>
+
+          <div class="menu__content">
+            <h3 class="menu__name">آیس‌کرم</h3>
+            <span class="menu__detail">سه طعم: وانیل، شکلات، توت‌فرنگی</span>
+            <span class="menu__preci">35,000 تومان</span>
+            <a href="#" class="button menu__button">
+              <i class="bx bx-cart-alt"></i>
+            </a>
+          </div>
+
+          <div class="menu__content">
+            <h3 class="menu__name">پروفیترول</h3>
+            <span class="menu__detail">شیرینی فرانسوی با کرم</span>
+            <span class="menu__preci">65,000 تومان</span>
+            <a href="#" class="button menu__button">
+              <i class="bx bx-cart-alt"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Juice Menu -->
+        <div class="menu__category" id="juice">
+          <div class="menu__content">
+            <h3 class="menu__name">چیزکیک</h3>
+            <span class="menu__detail">چیزکیک کلاسیک با توت‌فرنگی</span>
+            <span class="menu__preci">55,000 تومان</span>
+            <a href="#" class="button menu__button">
+              <i class="bx bx-cart-alt"></i>
+            </a>
+          </div>
+
+          <div class="menu__content">
+            <h3 class="menu__name">تیرامیسو</h3>
+            <span class="menu__detail">دسر ایتالیایی با قهوه</span>
+            <span class="menu__preci">60,000 تومان</span>
+            <a href="#" class="button menu__button">
+              <i class="bx bx-cart-alt"></i>
+            </a>
+          </div>
+
+          <div class="menu__content">
+            <h3 class="menu__name">براونی</h3>
+            <span class="menu__detail">شکلاتی با بستنی وانیلی</span>
+            <span class="menu__preci">50,000 تومان</span>
+            <a href="#" class="button menu__button">
+              <i class="bx bx-cart-alt"></i>
+            </a>
+          </div>
+
+          <div class="menu__content">
+            <h3 class="menu__name">پان‌کیک</h3>
+            <span class="menu__detail">پان‌کیک با عسل و میوه</span>
+            <span class="menu__preci">45,000 تومان</span>
+            <a href="#" class="button menu__button">
+              <i class="bx bx-cart-alt"></i>
+            </a>
+          </div>
+
+          <div class="menu__content">
+            <h3 class="menu__name">آیس‌کرم</h3>
+            <span class="menu__detail">سه طعم: وانیل، شکلات، توت‌فرنگی</span>
+            <span class="menu__preci">35,000 تومان</span>
+            <a href="#" class="button menu__button">
+              <i class="bx bx-cart-alt"></i>
+            </a>
+          </div>
+
+          <div class="menu__content">
+            <h3 class="menu__name">پروفیترول</h3>
+            <span class="menu__detail">شیرینی فرانسوی با کرم</span>
+            <span class="menu__preci">65,000 تومان</span>
+            <a href="#" class="button menu__button">
+              <i class="bx bx-cart-alt"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!--========== CONTACT US ==========-->
+      <section class="contact section bd-container" id="contact">
+        <div class="contact__container bd-grid">
+          <div class="contact__data">
+            <span class="section-subtitle contact__initial">'گپ بزنیم؟'</span>
+            <h2 class="section-title contact__initial">ارتباط با ما</h2>
+            <p class="contact__description">می‌تونید با فالو کردن پیج اینستامون با ما همراه باشید و از ایونت‌هامون مطلع بشین</p>
+          </div>
+
+          <div class="contact__button">
+            <a href="#" class="button">بخند :)</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--========== FOOTER ==========-->
+    <footer class="footer section bd-container">
+      <div class="footer__container bd-grid">
+        <div class="footer__content">
+          <a href="#" class="footer__logo">N.G.S</a>
+          <span class="footer__description">n.g.s.complex@</span>
+          <div>
+            <a href="#" class="footer__social"
+              ><i class="bx bxl-telegram"></i
+            ></a>
+            <a href="#" class="footer__social"
+              ><i class="bx bxl-instagram"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">آدرس</h3>
+          <ul>
+            <li>چهارراه باغشمال</li>
+            <li>به سمت باغشمال</li>
+            <li>روبه‌روی ساختمان میلاد</li>
+            <li>مجتمع سفیران</li>
+            <li>شماره تماس: ۰۹۳۶۵۶۲۳۶۹۶</li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="footer__copy">اینستاگرام برنامه‌نویس و طراح منو: amirzaco@</p>
+    </footer>
+
+    <!--========== SCROLL REVEAL ==========-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--========== MAIN JS ==========-->
+    <script src="assets/js/main.js"></script>
+
+    <!--========== FONT AWESOME ==========-->
+    <script
+      src="https://kit.fontawesome.com/6f0092d662.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
