@@ -71,6 +71,16 @@ html {
   scroll-behavior: smooth;
 }
 
+::-moz-selection {
+  background-color: var(--first-color-alt);
+  color: #fff;
+}
+
+::selection {
+  background-color: var(--first-color-alt);
+  color: #fff;
+}
+
 /*========== Variables Dark theme ==========*/
 body.dark-theme {
   --title-color: #f1f3f2;
