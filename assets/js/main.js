@@ -23,8 +23,8 @@ function linkAction() {
 }
 navLink.forEach((n) => n.addEventListener("click", linkAction));
 
-/*==================== CLOSE MENU ON OUTSIDE CLICK ====================*/
-document.addEventListener("click", (event) => {
+/*==================== CLOSE MENU ON OUTSIDE CLICK (desktop/mobile) ====================*/
+const closeMenuOnOutside = (event) => {
   const navMenu = document.getElementById("nav-menu");
   const navToggle = document.getElementById("nav-toggle");
   if (!navMenu || !navToggle) return;
@@ -39,7 +39,12 @@ document.addEventListener("click", (event) => {
   ) {
     navMenu.classList.remove("show-menu");
   }
-});
+};
+
+// Use capture to increase reliability on mobile and nested elements
+document.addEventListener("click", closeMenuOnOutside, true);
+document.addEventListener("touchstart", closeMenuOnOutside, true);
+document.addEventListener("pointerdown", closeMenuOnOutside, true);
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = document.querySelectorAll("section[id]");
