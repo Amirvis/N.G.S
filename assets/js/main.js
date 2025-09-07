@@ -23,6 +23,24 @@ function linkAction() {
 }
 navLink.forEach((n) => n.addEventListener("click", linkAction));
 
+/*==================== CLOSE MENU ON OUTSIDE CLICK ====================*/
+document.addEventListener("click", (event) => {
+  const navMenu = document.getElementById("nav-menu");
+  const navToggle = document.getElementById("nav-toggle");
+  if (!navMenu || !navToggle) return;
+
+  const clickedInsideMenu = navMenu.contains(event.target);
+  const clickedToggle = navToggle.contains(event.target);
+
+  if (
+    navMenu.classList.contains("show-menu") &&
+    !clickedInsideMenu &&
+    !clickedToggle
+  ) {
+    navMenu.classList.remove("show-menu");
+  }
+});
+
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = document.querySelectorAll("section[id]");
 
