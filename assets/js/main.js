@@ -123,29 +123,34 @@ if (typeof ScrollReveal !== "undefined") {
 }
 
 /*==================== MENU CATEGORY SWITCHER ====================*/
-const menuCategoryBtns = document.querySelectorAll(".menu__category-btn");
-const menuCategories = document.querySelectorAll(".menu__category");
+let menuCategoryBtns = document.querySelectorAll(".menu__category-btn");
 
-if (menuCategoryBtns.length && menuCategories.length) {
-  menuCategoryBtns.forEach((btn) => {
-    btn.addEventListener("click", () => {
-      // Remove active class from all buttons
-      menuCategoryBtns.forEach((button) => button.classList.remove("active"));
+let menuCategories = document.querySelectorAll(".menu__category");
 
-      // Add active class to clicked button
-      btn.classList.add("active");
+for (let i = 0; i < menuCategoryBtns.length; i++) {
+  if (i != 0) {
+    menuCategoryBtns[i].classList.remove("active");
+  }
+}
 
-      // Hide all menu categories
-      menuCategories.forEach((category) => {
-        category.classList.remove("active");
-      });
+for (let i = 0; i < menuCategories.length; i++) {
+  if (i != 0) {
+    menuCategories[i].classList.remove("active");
+  }
+}
 
-      // Show selected category
-      const targetCategory = btn.getAttribute("data-category");
-      const selectedCategory = document.getElementById(targetCategory);
-      if (selectedCategory) {
-        selectedCategory.classList.add("active");
+if (menuCategoryBtns.length == menuCategories.length) {
+  menuCategoryBtns.forEach((item, index) => {
+    item.addEventListener("click", () => {
+      for (let i = 0; i < menuCategoryBtns.length; i++) {
+        menuCategoryBtns[i].classList.remove("active");
       }
+      for (let i = 0; i < menuCategories.length; i++) {
+        menuCategories[i].classList.remove("active");
+      }
+
+      item.classList.add("active");
+      menuCategories[index].classList.add("active");
     });
   });
 }
