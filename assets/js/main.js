@@ -130,7 +130,8 @@ document.addEventListener('DOMContentLoaded', function() {
 		AOS.init({
             easing: "ease-in-out",
             once: "true",
-            duration: "800"
+            duration: "800",
+            delay: "200"
         });
 	}
 });
