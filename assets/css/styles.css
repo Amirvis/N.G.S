@@ -522,6 +522,10 @@ img {
   margin-top: 3.5rem;
 }
 
+.footer__programmer {
+  color: var(--first-color-alt);
+}
+
 /*========== MEDIA QUERIES ==========*/
 @media screen and (min-width: 576px) {
   .home__container,
