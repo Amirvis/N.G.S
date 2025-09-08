@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="fa">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
     <!--========== BOX ICONS ==========-->
-    <link
-      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
-      rel="stylesheet"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet"/>
 
     <!--========== CSS ==========-->
     <link rel="stylesheet" href="assets/css/styles.css" />
 
     <!--========== FAVICON ==========-->
     <link rel="shortcut icon" href="./assets/img/NGS Menu.png" type="image/x-icon">
+
+    <!--========== Animate on Scroll Library CDN ==========-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+
 
     <title>N.G.S Menu</title>
   </head>
@@ -59,7 +60,7 @@
       <!--========== HOME ==========-->
       <section class="home" id="home">
         <div class="home__container bd-container bd-grid">
-          <div class="home__data">
+          <div class="home__data" data-aos="fade-down">
             <h1 class="home__title">مجتمع N.G.S</h1>
             <h2 class="home__subtitle">
               قهوه حقیقت است!
@@ -71,6 +72,7 @@
             src="./assets/img/NGS Menu.png"
             alt=""
             class="home__img"
+            data-aos="fade-up"
           />
         </div>
       </section>
@@ -78,7 +80,7 @@
       <!--========== ABOUT ==========-->
       <section class="about section bd-container" id="about">
         <div class="about__container bd-grid">
-          <div class="about__data">
+          <div class="about__data" data-aos="fade-right">
             <span class="section-subtitle about__initial">درباره ما</span>
             <h2 class="section-title about__initial">
               سعی ما بر بهترین‌هاست
@@ -93,29 +95,29 @@
             </p>
           </div>
 
-          <img src="assets/img/mafiagame.jpg" alt="" class="about__img" />
+          <img src="assets/img/mafiagame.jpg" alt="" class="about__img" data-aos="fade-left"/>
         </div>
       </section>
 
       <!--========== SERVICES ==========-->
       <section class="services section bd-container" id="services">
-        <span class="section-subtitle">خدمات</span>
-        <h2 class="section-title">سرویس مشتری‌های دائمی</h2>
+        <span class="section-subtitle" data-aos="fade">خدمات</span>
+        <h2 class="section-title" data-aos="fade">سرویس مشتری‌های دائمی</h2>
 
         <div class="services__container bd-grid">
-          <div class="services__content">
-            <i class="icons fa-solid fa-scroll"></i>
+          <div class="services__content" data-aos="fade-up">
+            <i class="icons fa-solid fa-scroll"></i>  
             <h3 class="services__title">رسپی درخواستی</h3>
             <p class="services__description">می‌تونی یه سری چیزای ترکیبی از منو سفارش بدی</p>
           </div>
 
-          <div class="services__content">
+          <div class="services__content" data-aos="fade-up">
             <i class="icons fa-solid fa-percent"></i>
             <h3 class="services__title">تخفیف</h3>
             <p class="services__description">به نسبت حجم سفارش یه تخفیف رندوم مهمون ما</p>
           </div>
 
-          <div class="services__content">
+          <div class="services__content" data-aos="fade-up">
             <i class="icons fa-solid fa-book"></i>
             <h3 class="services__title">کتابتو عوض کن</h3>
             <p class="services__description">می‌تونی یه کتاب از کتابخونه‌مون برداری و با کتاب خودت جایگزینش کنی</p>
@@ -125,11 +127,11 @@
 
       <!--========== MENU ==========-->
       <section class="section bd-container" id="menu">
-        <span class="section-subtitle">مخصوص</span>
-        <h2 class="section-title">منوی هفته</h2>
+        <span class="section-subtitle" data-aos="fade">مخصوص</span>
+        <h2 class="section-title" data-aos="fade">منوی هفته</h2>
 
         <!-- Menu Categories -->
-        <div class="menu__categories">
+        <div class="menu__categories" data-aos="fade-top">
           <button class="menu__category-btn active">قهوه</button>
           <button class="menu__category-btn">نوشیدنی گرم</button>
           <button class="menu__category-btn">میلک شیک</button>
@@ -141,7 +143,7 @@
         </div>
 
         <!-- Coffee Menu -->
-        <div class="menu__category active">
+        <div class="menu__category active" data-aos="fade-top">
 
           <div class="menu__content">
             <h3 class="menu__name">اسپرسو سینگل</h3>
@@ -326,7 +328,7 @@
         </div>
 
         <!-- Hot Drink Menu -->
-        <div class="menu__category">
+        <div class="menu__category" data-aos="fade-top">
 
           <div class="menu__content">
             <h3 class="menu__name">هات چاکلت</h3>
@@ -394,7 +396,7 @@
         </div>
 
         <!-- MilkShake Menu -->
-        <div class="menu__category">
+        <div class="menu__category" data-aos="fade-top">
 
           <div class="menu__content">
             <h3 class="menu__name">شیک شکلات</h3>
@@ -480,7 +482,7 @@
         </div>
 
         <!-- Food Menu -->
-        <div class="menu__category">
+        <div class="menu__category" data-aos="fade-top">
 
           <div class="menu__content">
             <h3 class="menu__name">سیب زمینی</h3>
@@ -647,7 +649,7 @@
         </div>
 
         <!-- Cocktail Menu -->
-        <div class="menu__category">
+        <div class="menu__category" data-aos="fade-top">
 
           <div class="menu__content">
             <h3 class="menu__name">لیموناد</h3>
@@ -733,7 +735,7 @@
         </div>
 
         <!-- Dessert Menu -->
-        <div class="menu__category">
+        <div class="menu__category" data-aos="fade-top">
 
           <div class="menu__content">
             <h3 class="menu__name">کیک روز</h3>
@@ -765,7 +767,7 @@
         </div>
 
         <!-- Tea Menu -->
-        <div class="menu__category">
+        <div class="menu__category" data-aos="fade-top">
 
           <div class="menu__content">
             <h3 class="menu__name">چای لیوانی</h3>
@@ -869,7 +871,7 @@
         </div>
 
         <!-- Juice Menu -->
-        <div class="menu__category">
+        <div class="menu__category" data-aos="fade-top">
 
           <div class="menu__content">
             <h3 class="menu__name">هندوانه</h3>
@@ -931,13 +933,13 @@
       <!--========== CONTACT US ==========-->
       <section class="contact section bd-container" id="contact">
         <div class="contact__container bd-grid">
-          <div class="contact__data">
+          <div class="contact__data" data-aos="fade-left">
             <span class="section-subtitle contact__initial">'گپ بزنیم؟'</span>
             <h2 class="section-title contact__initial">ارتباط با ما</h2>  
             <p class="contact__description">می‌تونید با فالو کردن پیج اینستامون با ما همراه باشید و از ایونت‌هامون مطلع بشین</p>
           </div>
 
-          <div class="contact__button">
+          <div class="contact__button" data-aos="fade-right">
             <a href="#" class="button">بخند :)</a>
           </div>
         </div>
@@ -946,7 +948,7 @@
 
     <!--========== FOOTER ==========-->
     <footer class="footer section bd-container">
-      <div class="footer__container bd-grid">
+      <div class="footer__container bd-grid" data-aos="fade-top">
         <div class="footer__content">
           <a href="#" class="footer__logo">N.G.S</a>
           <span class="footer__description">n.g.s.complex@</span>
@@ -975,9 +977,6 @@
       <p class="footer__copy">اینستاگرام برنامه‌نویس و طراح منو: amirzaco@</p>
     </footer>
 
-    <!--========== SCROLL REVEAL ==========-->
-    <script src="https://unpkg.com/scrollreveal"></script>
-
     <!--========== MAIN JS ==========-->
     <script src="assets/js/main.js"></script>
 
@@ -986,5 +985,9 @@
       src="https://kit.fontawesome.com/6f0092d662.js"
       crossorigin="anonymous"
     ></script>
+
+    <!--========== Animate on Scroll Library CDN ==========-->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
   </body>
 </html>

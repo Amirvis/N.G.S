@@ -124,26 +124,16 @@ themeButton.addEventListener("click", () => {
   localStorage.setItem("selected-icon", getCurrentIcon());
 });
 
-/*==================== SCROLL REVEAL ANIMATION ====================*/
-if (typeof ScrollReveal !== "undefined") {
-  const sr = ScrollReveal({
-    origin: "top",
-    distance: "30px",
-    duration: 2000,
-    reset: true,
-  });
-
-  sr.reveal(
-    `.home__data, .home__img,
-              .about__data, .about__img,
-              .services__content, .menu__content,
-              .contact__data, .contact__button,
-              .footer__content`,
-    {
-      interval: 200,
-    }
-  );
-}
+/*==================== AOS Library ====================*/
+document.addEventListener('DOMContentLoaded', function() {
+	if ('AOS' in window) {
+		AOS.init({
+            easing: "ease-in-out",
+            once: "true",
+            duration: "800"
+        });
+	}
+});
 
 /*==================== MENU CATEGORY SWITCHER ====================*/
 let menuCategoryBtns = document.querySelectorAll(".menu__category-btn");
