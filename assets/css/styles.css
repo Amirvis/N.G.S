@@ -427,6 +427,11 @@ img {
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
+.menu__content-img {
+  background: center / cover no-repeat, rgba(0, 0, 0, 0.5);
+  background-blend-mode: overlay;
+}
+
 .menu__img {
   width: 100px;
   height: 100px;
@@ -603,10 +608,6 @@ img {
   }
   .menu__content {
     padding: 1.5rem;
-  }
-  .menu__content-img {
-    background: center / cover no-repeat, rgba(0, 0, 0, 0.5);
-    background-blend-mode: overlay;
   }
   .menu__img {
     width: 130px;
