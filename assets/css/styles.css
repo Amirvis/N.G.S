@@ -20,6 +20,7 @@
   --text-color-light: #a6a6a6;
   --body-color: #fbfefd;
   --container-color: #ffffff;
+  --menu-color: #d0d0d0;
 
   /*========== Font and typography ==========*/
   --body-font: "yekan", "Poppins", sans-serif;
@@ -428,7 +429,7 @@ img {
 }
 
 .menu__content-img {
-  background: center / cover no-repeat, rgba(248, 240, 240, 0.75);
+  background: center / cover no-repeat, rgba(0, 0, 0, 0.55);
   background-blend-mode: overlay;
 }
 
@@ -443,13 +444,13 @@ img {
 
 .menu__name {
   font-size: var(--h3-font-size);
-  color: var(--title-color);
+  color: var(--menu-color);
   margin-bottom: var(--mb-2);
   font-weight: var(--font-semi-bold);
 }
 
 .menu__detail {
-  color: var(--text-color);
+  color: var(--menu-color);
   font-size: var(--small-font-size);
   margin-bottom: var(--mb-2);
   line-height: 1.4;
